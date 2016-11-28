@@ -3,20 +3,12 @@ SCREEN 13
 CLS
 WHILE 1 = 1
     CLS
-    FOR x = 0 TO 99 STEP 8
-        LINE (159 - x, 99 - x)-(160 + x, 100 + x), 45, B
+    FOR x = 0 TO 99
+        LINE (159 - x, 99 - x)-(160 + x, 100 + x), x, B
         Delay (0.6)
     NEXT
-    FOR x = 4 TO 99 STEP 8
-        LINE (159 - x, 99 - x)-(160 + x, 100 + x), 45, B
-        Delay (0.6)
-    NEXT
-    FOR x = 0 TO 97 STEP 8
-        LINE (159 - x, 99 - x)-(160 + x, 100 + x), 0, B
-        Delay (0.6)
-    NEXT
-    FOR x = 4 TO 97 STEP 8
-        LINE (159 - x, 99 - x)-(160 + x, 100 + x), 0, B
+    FOR x = 99 TO 0
+        LINE (159 - x, 99 - x)-(160 + x, 100 + x), x, B
         Delay (0.6)
     NEXT
 
